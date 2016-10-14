@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -95,7 +95,91 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* {
+     box-sizing: border-box;
+   }
 
+body {
+    background: #5E2D79;
+    margin: 0;
+}
+
+header {
+    background: #72587F;
+    height: 41px;
+}
+
+header.animate {
+    height: 82px;
+}
+
+header .wrapper {
+    display: flex;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    padding: 3px;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+    flex-grow: 10;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+.sticon.menu {
+    flex-grow: 1;
+    font-size: 1.85rem;
+    text-decoration: none;
+}
+
+.sticon.menu:before {
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    text-indent: 0;
+    line-height: 1;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'sticon';
+    content: "\f0ca";
+}
+
+main {
+    background: #BDA0CB;
+    font-size: .8rem;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.news-container, .geo-container, .foo-container {
+    opacity: 0;
+}
+
+footer {
+    background: #72587F;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .4rem;
+    font-size: .6rem;
+}
 
 
 
