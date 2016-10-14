@@ -99,6 +99,10 @@ textarea {
      box-sizing: border-box;
    }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background: #5E2D79;
     margin: 0;
@@ -131,6 +135,14 @@ h1 {
     text-align: center;
 }
 
+nav {
+    display: none;
+}
+
+header.animate nav {
+    display: block;
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -143,7 +155,6 @@ nav ul li {
 .sticon.menu {
     flex-grow: 1;
     font-size: 1.85rem;
-    text-decoration: none;
 }
 
 .sticon.menu:before {

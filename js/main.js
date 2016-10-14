@@ -6,7 +6,7 @@ $('a.news').click(function() {
         console.log(result);
         $('.news-container').html('');
         clearMain();
-        $('.news-container').css('opacity', '1');
+        $('.news-container').css('opacity', '1').css('display', 'block');;
         $.each(result, function(i, field){
                 $('.news-container').append(field + ' ');
             });
@@ -16,7 +16,7 @@ $('a.news').click(function() {
 
 $('a.geo').click(function() {
     clearMain();
-    $('.geo-container').css('opacity', '1');
+    $('.geo-container').css('opacity', '1').css('display', 'block');
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -34,6 +34,7 @@ function showPosition(position) {
 
 $('a.foo').click(function() {
     clearMain();
+    $('.foo-container').css('opacity', '1').css('display', 'block');
 });
 
 
@@ -43,7 +44,7 @@ $('.sticon.menu').click(function() {
 
 
 function clearMain() {
-    $('.geo-container').css('opacity', '0');
-    $('.foo-container').css('opacity', '0');
-    $('.news-container').css('opacity', '0');
+    $('.geo-container').css('opacity', '0').css('display', 'none');
+    $('.foo-container').css('opacity', '0').css('display', 'none');
+    $('.news-container').css('opacity', '0').css('display', 'none');
 }
